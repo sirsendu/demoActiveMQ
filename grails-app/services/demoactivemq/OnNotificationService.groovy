@@ -5,7 +5,11 @@ import grails.transaction.Transactional
 @Transactional
 class OnNotificationService {
 
-    def serviceMethod() {
+    boolean transactional = false
+    static exposes = ['jms']
+    static destination = "queue.notification"
 
+    def onMessage(it){
+	    println "GOT MESSAGE: $it"
     }
 }
