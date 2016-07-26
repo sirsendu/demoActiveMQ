@@ -75,6 +75,16 @@ grails.web.disable.multipart=false
 
 // request parameters to mask when logging exceptions
 grails.exceptionresolver.params.exclude = ['password']
+grails.activemq.active=true
+grails.plugins.activemq.port=7892
+
+//The JMX monitoring is disabled by default, but you can enable JMX monitoring with this config
+
+grails.plugins.activemq.useJmx=true
+
+//And you can configure the messaging persistence, the persistence is disabled by default.
+
+grails.plugins.activemq.persistent=true
 
 // configure auto-caching of queries by default (if false you can cache individual queries with 'cache: true')
 grails.hibernate.cache.queries = false
