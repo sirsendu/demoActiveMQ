@@ -77,7 +77,7 @@ grails.web.disable.multipart=false
 grails.exceptionresolver.params.exclude = ['password']
 grails.activemq.active=true
 grails.plugins.activemq.port=7892
-
+grails.plugin.routing.jms.brokerURL = "tcp://localhost:61616"
 //The JMX monitoring is disabled by default, but you can enable JMX monitoring with this config
 
 grails.plugins.activemq.useJmx=true
