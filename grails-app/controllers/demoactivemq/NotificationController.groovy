@@ -1,6 +1,5 @@
 package demoactivemq
 
-import com.dd.TradeDTO
 import com.google.gson.Gson
 import javax.jms.JMSException
 import javax.jms.Message
@@ -19,7 +18,6 @@ class NotificationController {
 		//sendJMSMessage("activemq:input.queue", "Message")
 		//sendJMSMessage("activemq:input.queue", "Message")
 		//render "ACK"
-	TradeDTO dto = request.JSON as TradeDTO
 	Gson gson = new Gson();
 
 	
