@@ -51,6 +51,10 @@ grails.project.dependency.resolution = {
         // runtime 'mysql:mysql-connector-java:5.1.29'
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
         test "org.grails:grails-datastore-test-support:1.0.2-grails-2.4"
+        compile 'com.fasterxml.jackson.core:jackson-core:2.7.2'
+	compile 'com.fasterxml.jackson.core:jackson-core:2.7.2'
+	compile 'com.fasterxml.jackson.core:jackson-databind:2.7.2'
+	compile 'javax.inject:javax.inject:1'
     }
 
     plugins {
@@ -65,7 +69,7 @@ grails.project.dependency.resolution = {
 	compile ":jms:1.3"
 	compile "org.grails.plugins:routing-jms:1.2.0"
 	//compile "org.grails.plugins:routing:1.4.0"
-	
+	//compile "org.grails.plugins:gson:1.1.4"
         // plugins needed at runtime but not for compilation
         runtime ":hibernate4:4.3.8.1" // or ":hibernate:3.6.10.18"
         runtime ":database-migration:1.4.0"
